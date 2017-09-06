@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F85F38751F5FED2C008E4157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F38741F5FED2C008E4157 /* AppDelegate.swift */; };
-		F85F38771F5FED2C008E4157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F38761F5FED2C008E4157 /* ViewController.swift */; };
 		F85F38791F5FED2C008E4157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85F38781F5FED2C008E4157 /* Assets.xcassets */; };
 		F85F387C1F5FED2C008E4157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85F387A1F5FED2C008E4157 /* Main.storyboard */; };
+		F88B15A31F5FF85E006801B3 /* MobileCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88B159F1F5FF85E006801B3 /* MobileCenter.framework */; };
+		F88B15A41F5FF85F006801B3 /* MobileCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88B15A01F5FF85E006801B3 /* MobileCenterAnalytics.framework */; };
+		F88B15A51F5FF85F006801B3 /* MobileCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88B15A11F5FF85E006801B3 /* MobileCenterCrashes.framework */; };
+		F88B15A61F5FF85F006801B3 /* MobileCenterPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88B15A21F5FF85E006801B3 /* MobileCenterPush.framework */; };
+		F88B15AA1F602D24006801B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88B15A91F602D24006801B3 /* ViewController.swift */; };
+		F88B15B11F604889006801B3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88B15B01F604889006801B3 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F85F38711F5FED2C008E4157 /* sample-app-macos-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-app-macos-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F38711F5FED2C008E4157 /* Mobile Center Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Center Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85F38741F5FED2C008E4157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F85F38761F5FED2C008E4157 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F85F38781F5FED2C008E4157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F85F387B1F5FED2C008E4157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F85F387D1F5FED2C008E4157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88B159F1F5FF85E006801B3 /* MobileCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenter.framework; sourceTree = "<group>"; };
+		F88B15A01F5FF85E006801B3 /* MobileCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenterAnalytics.framework; sourceTree = "<group>"; };
+		F88B15A11F5FF85E006801B3 /* MobileCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenterCrashes.framework; sourceTree = "<group>"; };
+		F88B15A21F5FF85E006801B3 /* MobileCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenterPush.framework; sourceTree = "<group>"; };
+		F88B15A91F602D24006801B3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F88B15B01F604889006801B3 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88B15A41F5FF85F006801B3 /* MobileCenterAnalytics.framework in Frameworks */,
+				F88B15A51F5FF85F006801B3 /* MobileCenterCrashes.framework in Frameworks */,
+				F88B15A31F5FF85E006801B3 /* MobileCenter.framework in Frameworks */,
+				F88B15A61F5FF85F006801B3 /* MobileCenterPush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,13 +52,14 @@
 			children = (
 				F85F38731F5FED2C008E4157 /* sample-app-macos-swift */,
 				F85F38721F5FED2C008E4157 /* Products */,
+				F88B159E1F5FF85E006801B3 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
 		F85F38721F5FED2C008E4157 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F85F38711F5FED2C008E4157 /* sample-app-macos-swift.app */,
+				F85F38711F5FED2C008E4157 /* Mobile Center Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,7 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				F85F38741F5FED2C008E4157 /* AppDelegate.swift */,
-				F85F38761F5FED2C008E4157 /* ViewController.swift */,
+				F88B15B01F604889006801B3 /* PageViewController.swift */,
+				F88B15A91F602D24006801B3 /* ViewController.swift */,
 				F85F38781F5FED2C008E4157 /* Assets.xcassets */,
 				F85F387A1F5FED2C008E4157 /* Main.storyboard */,
 				F85F387D1F5FED2C008E4157 /* Info.plist */,
@@ -61,12 +77,23 @@
 			path = "sample-app-macos-swift";
 			sourceTree = "<group>";
 		};
+		F88B159E1F5FF85E006801B3 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F88B159F1F5FF85E006801B3 /* MobileCenter.framework */,
+				F88B15A01F5FF85E006801B3 /* MobileCenterAnalytics.framework */,
+				F88B15A11F5FF85E006801B3 /* MobileCenterCrashes.framework */,
+				F88B15A21F5FF85E006801B3 /* MobileCenterPush.framework */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F85F38701F5FED2C008E4157 /* sample-app-macos-swift */ = {
+		F85F38701F5FED2C008E4157 /* Mobile Center Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F85F38801F5FED2C008E4157 /* Build configuration list for PBXNativeTarget "sample-app-macos-swift" */;
+			buildConfigurationList = F85F38801F5FED2C008E4157 /* Build configuration list for PBXNativeTarget "Mobile Center Sample" */;
 			buildPhases = (
 				F85F386D1F5FED2C008E4157 /* Sources */,
 				F85F386E1F5FED2C008E4157 /* Frameworks */,
@@ -76,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = "sample-app-macos-swift";
+			name = "Mobile Center Sample";
 			productName = "sample-app-macos-swift";
-			productReference = F85F38711F5FED2C008E4157 /* sample-app-macos-swift.app */;
+			productReference = F85F38711F5FED2C008E4157 /* Mobile Center Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F85F386C1F5FED2C008E4157 /* Build configuration list for PBXProject "sample-app-macos-swift" */;
+			buildConfigurationList = F85F386C1F5FED2C008E4157 /* Build configuration list for PBXProject "Mobile Center Sample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F85F38701F5FED2C008E4157 /* sample-app-macos-swift */,
+				F85F38701F5FED2C008E4157 /* Mobile Center Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -133,7 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85F38771F5FED2C008E4157 /* ViewController.swift in Sources */,
+				F88B15B11F604889006801B3 /* PageViewController.swift in Sources */,
+				F88B15AA1F602D24006801B3 /* ViewController.swift in Sources */,
 				F85F38751F5FED2C008E4157 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +278,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UBF8T346G9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor",
+				);
 				INFOPLIST_FILE = "sample-app-macos-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.azure.mobile.sampleapp.swift;
@@ -264,6 +296,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UBF8T346G9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor",
+				);
 				INFOPLIST_FILE = "sample-app-macos-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.azure.mobile.sampleapp.swift;
@@ -275,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F85F386C1F5FED2C008E4157 /* Build configuration list for PBXProject "sample-app-macos-swift" */ = {
+		F85F386C1F5FED2C008E4157 /* Build configuration list for PBXProject "Mobile Center Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F85F387E1F5FED2C008E4157 /* Debug */,
@@ -284,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F85F38801F5FED2C008E4157 /* Build configuration list for PBXNativeTarget "sample-app-macos-swift" */ = {
+		F85F38801F5FED2C008E4157 /* Build configuration list for PBXNativeTarget "Mobile Center Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F85F38811F5FED2C008E4157 /* Debug */,
