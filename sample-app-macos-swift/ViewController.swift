@@ -21,8 +21,8 @@ class ViewController: NSViewController {
     let selectedIndex = pageController?.selectedIndex ?? 0
     let count = pageController?.arrangedObjects.count ?? Int.max
     
-    back.isHidden = selectedIndex <= 0
-    forward.isHidden = selectedIndex >= count - 1
+    back.isEnabled = selectedIndex > 0
+    forward.isEnabled = selectedIndex < count - 1
   }
   
   @IBAction func navigateBack(_ sender: Any) {

@@ -462,7 +462,7 @@
         <!--Crashes-->
         <scene sceneID="2Cc-q1-9DG">
             <objects>
-                <viewController title="Crashes" storyboardIdentifier="crashViewController" id="bWk-Sc-unI" sceneMemberID="viewController">
+                <viewController title="Crashes" storyboardIdentifier="crashViewController" id="bWk-Sc-unI" customClass="CrashViewController" customModule="Mobile_Center_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="0Xn-SF-828">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,10 +509,26 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DlY-jo-jJx">
+                                            <rect key="frame" x="28" y="57" width="319" height="65"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="gQP-Yn-BbK"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="bevel" title="Send a sample crash" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nJO-qv-OUf">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="crash:" target="bWk-Sc-unI" id="o3H-vH-K9A"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="VyU-lo-hUQ" firstAttribute="top" secondItem="eyY-Nd-Uza" secondAttribute="top" constant="30" id="2M1-cq-tgV"/>
+                                        <constraint firstItem="DlY-jo-jJx" firstAttribute="leading" secondItem="eyY-Nd-Uza" secondAttribute="leading" constant="30" id="76H-fW-c9f"/>
                                         <constraint firstItem="VyU-lo-hUQ" firstAttribute="leading" secondItem="eyY-Nd-Uza" secondAttribute="leading" constant="30" id="URG-qw-ZVK"/>
+                                        <constraint firstAttribute="trailing" secondItem="DlY-jo-jJx" secondAttribute="trailing" constant="30" id="Wpu-4C-UTt"/>
+                                        <constraint firstAttribute="bottom" secondItem="DlY-jo-jJx" secondAttribute="bottom" constant="60" id="eXP-H5-Vqj"/>
                                         <constraint firstAttribute="trailing" secondItem="VyU-lo-hUQ" secondAttribute="trailing" constant="30" id="wey-Mn-M6o"/>
                                     </constraints>
                                 </view>
@@ -535,12 +551,12 @@
                 </viewController>
                 <customObject id="Nfx-k8-Yjv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="1599"/>
+            <point key="canvasLocation" x="519.5" y="1599"/>
         </scene>
         <!--Analytics-->
         <scene sceneID="p59-w5-HSe">
             <objects>
-                <viewController title="Analytics" storyboardIdentifier="analyticsViewController" id="fQP-Dr-dKg" sceneMemberID="viewController">
+                <viewController title="Analytics" storyboardIdentifier="analyticsViewController" id="fQP-Dr-dKg" customClass="AnalyticsViewController" customModule="Mobile_Center_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="9ng-9h-nYG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -578,11 +594,43 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-7c-qF4">
+                                            <rect key="frame" x="28" y="57" width="319" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="O5K-6J-hHC"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="bevel" title="Send event with color property" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2Fb-ZA-3Ol">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="color:" target="fQP-Dr-dKg" id="szf-Yz-wo9"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CaY-kt-eDq">
+                                            <rect key="frame" x="28" y="105" width="319" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="dTg-hF-bMn"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="bevel" title="Send a sample event" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oMd-sl-RYK">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="simple:" target="fQP-Dr-dKg" id="xPd-yL-Iom"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Ns1-XA-6In" secondAttribute="trailing" constant="30" id="09b-gf-dHZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="WYY-7c-qF4" secondAttribute="trailing" constant="30" id="1p5-B8-c5I"/>
+                                        <constraint firstItem="CaY-kt-eDq" firstAttribute="leading" secondItem="WYY-7c-qF4" secondAttribute="leading" id="IwG-G7-qvO"/>
+                                        <constraint firstItem="CaY-kt-eDq" firstAttribute="trailing" secondItem="WYY-7c-qF4" secondAttribute="trailing" id="MI8-Jc-dPT"/>
+                                        <constraint firstItem="WYY-7c-qF4" firstAttribute="top" secondItem="CaY-kt-eDq" secondAttribute="bottom" constant="8" symbolic="YES" id="RZ2-aa-sRY"/>
                                         <constraint firstItem="Ns1-XA-6In" firstAttribute="top" secondItem="yfc-Y9-hdZ" secondAttribute="top" constant="30" id="h8f-eD-zZn"/>
                                         <constraint firstItem="Ns1-XA-6In" firstAttribute="leading" secondItem="yfc-Y9-hdZ" secondAttribute="leading" constant="30" id="mp0-3G-Qh4"/>
+                                        <constraint firstAttribute="bottom" secondItem="WYY-7c-qF4" secondAttribute="bottom" constant="60" id="nn2-DJ-ecP"/>
+                                        <constraint firstItem="WYY-7c-qF4" firstAttribute="leading" secondItem="yfc-Y9-hdZ" secondAttribute="leading" constant="30" id="y9V-Gw-ioy"/>
                                     </constraints>
                                 </view>
                                 <color key="fillColor" red="0.97679489850997925" green="0.79253274202346802" blue="0.17351928353309631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

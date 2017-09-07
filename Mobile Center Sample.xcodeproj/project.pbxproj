@@ -13,6 +13,8 @@
 		F85F387C1F5FED2C008E4157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85F387A1F5FED2C008E4157 /* Main.storyboard */; };
 		F88B15AA1F602D24006801B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88B15A91F602D24006801B3 /* ViewController.swift */; };
 		F88B15B11F604889006801B3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88B15B01F604889006801B3 /* PageViewController.swift */; };
+		F8FCB3331F61797A0002D2D6 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCB3311F61797A0002D2D6 /* AnalyticsViewController.swift */; };
+		F8FCB3341F61797A0002D2D6 /* CrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCB3321F61797A0002D2D6 /* CrashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F85F387D1F5FED2C008E4157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88B15A91F602D24006801B3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F88B15B01F604889006801B3 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F8FCB3311F61797A0002D2D6 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		F8FCB3321F61797A0002D2D6 /* CrashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,9 @@
 		F85F38731F5FED2C008E4157 /* sample-app-macos-swift */ = {
 			isa = PBXGroup;
 			children = (
+				F8FCB3311F61797A0002D2D6 /* AnalyticsViewController.swift */,
 				F85F38741F5FED2C008E4157 /* AppDelegate.swift */,
+				F8FCB3321F61797A0002D2D6 /* CrashViewController.swift */,
 				F88B15B01F604889006801B3 /* PageViewController.swift */,
 				F88B15A91F602D24006801B3 /* ViewController.swift */,
 				F85F38781F5FED2C008E4157 /* Assets.xcassets */,
@@ -217,6 +223,8 @@
 				F88B15B11F604889006801B3 /* PageViewController.swift in Sources */,
 				F88B15AA1F602D24006801B3 /* ViewController.swift in Sources */,
 				F85F38751F5FED2C008E4157 /* AppDelegate.swift in Sources */,
+				F8FCB3341F61797A0002D2D6 /* CrashViewController.swift in Sources */,
+				F8FCB3331F61797A0002D2D6 /* AnalyticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
