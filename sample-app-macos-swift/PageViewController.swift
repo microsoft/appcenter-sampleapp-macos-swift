@@ -1,11 +1,3 @@
-//
-//  PageViewController.swift
-//  Mobile Center Sample
-//
-//  Created by Akvelon on 9/6/17.
-//  Copyright © 2017 Microsoft. All rights reserved.
-//
-
 import Cocoa
 
 class PageViewController: NSPageController, NSPageControllerDelegate {

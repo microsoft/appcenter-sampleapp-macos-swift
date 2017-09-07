@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  sample-app-macos-swift
-//
-//  Created by Akvelon on 9/6/17.
-//  Copyright © 2017 Microsoft. All rights reserved.
-//
-
 import Cocoa
 import MobileCenter
 import MobileCenterAnalytics
