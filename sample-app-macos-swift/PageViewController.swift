@@ -18,7 +18,7 @@ class PageViewController: NSPageController, NSPageControllerDelegate {
     "crashViewController",
     "analyticsViewController",
     "pushViewController",
-    ]
+  ]
   
   override func viewDidLoad() {
     super.viewDidLoad()
