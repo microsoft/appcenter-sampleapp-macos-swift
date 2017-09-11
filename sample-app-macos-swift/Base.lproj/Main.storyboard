@@ -382,83 +382,6 @@
             </objects>
             <point key="canvasLocation" x="969" y="250"/>
         </scene>
-        <!--Distribute-->
-        <scene sceneID="yMs-Zn-Bxd">
-            <objects>
-                <viewController title="Distribute" storyboardIdentifier="distributeViewController" id="Kaq-pH-ZxF" sceneMemberID="viewController">
-                    <view key="view" id="eom-2u-kJd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7K-cZ-bnZ">
-                                <rect key="frame" x="0.0" y="365" width="375" height="235"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="n7K-cZ-bnZ" secondAttribute="height" multiplier="75:47" id="BJg-FU-LQV"/>
-                                </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Distribute" id="pQC-UB-Dhp"/>
-                            </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-Cg-mfp">
-                                <rect key="frame" x="-2" y="549" width="379" height="21"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Distribute" id="12b-rn-kMe">
-                                    <font key="font" metaFont="systemSemibold" size="17"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <box boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Njq-Fb-lVu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="365"/>
-                                <view key="contentView" id="P6f-Nh-IOE">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="365"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6r-F7-8Xz">
-                                            <rect key="frame" x="28" y="185" width="319" height="150"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="150" id="COi-A0-JK6"/>
-                                            </constraints>
-                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Users can install the app via email distribution lists for testing, much as they'd download an app from the app store." id="cut-Jc-S5u">
-                                                <font key="font" metaFont="system" size="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-iG-AGR">
-                                            <rect key="frame" x="28" y="93" width="319" height="84"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Backed by HockeyApp." id="o8B-kK-S6w">
-                                                <font key="font" metaFont="system" size="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="r6r-F7-8Xz" firstAttribute="top" secondItem="P6f-Nh-IOE" secondAttribute="top" constant="30" id="1G8-5g-Ku3"/>
-                                        <constraint firstAttribute="trailing" secondItem="r6r-F7-8Xz" secondAttribute="trailing" constant="30" id="Q0w-Rh-OxT"/>
-                                        <constraint firstItem="r6r-F7-8Xz" firstAttribute="leading" secondItem="P6f-Nh-IOE" secondAttribute="leading" constant="30" id="tX3-hS-KhW"/>
-                                    </constraints>
-                                </view>
-                                <color key="fillColor" red="0.30569398403167725" green="0.75339204072952271" blue="0.69420409202575684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </box>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Njq-Fb-lVu" secondAttribute="trailing" id="4Cr-FY-taW"/>
-                            <constraint firstItem="Njq-Fb-lVu" firstAttribute="leading" secondItem="eom-2u-kJd" secondAttribute="leading" id="CzQ-i8-GqB"/>
-                            <constraint firstItem="n7K-cZ-bnZ" firstAttribute="top" secondItem="eom-2u-kJd" secondAttribute="top" id="Ekr-Bq-9i0"/>
-                            <constraint firstAttribute="bottom" secondItem="Njq-Fb-lVu" secondAttribute="bottom" id="IJB-Yy-W0E"/>
-                            <constraint firstItem="n7K-cZ-bnZ" firstAttribute="leading" secondItem="eom-2u-kJd" secondAttribute="leading" id="OH2-3O-9aB"/>
-                            <constraint firstItem="h4U-Cg-mfp" firstAttribute="leading" secondItem="eom-2u-kJd" secondAttribute="leading" id="YiQ-Fx-HwI"/>
-                            <constraint firstAttribute="trailing" secondItem="h4U-Cg-mfp" secondAttribute="trailing" id="YrG-V0-cHh"/>
-                            <constraint firstItem="h4U-Cg-mfp" firstAttribute="top" secondItem="eom-2u-kJd" secondAttribute="top" constant="30" id="bvn-7I-j0Z"/>
-                            <constraint firstItem="Njq-Fb-lVu" firstAttribute="top" secondItem="n7K-cZ-bnZ" secondAttribute="bottom" id="i59-Yo-pLf"/>
-                            <constraint firstAttribute="trailing" secondItem="n7K-cZ-bnZ" secondAttribute="trailing" id="jAF-Xh-ZUV"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="H37-T4-Oqj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1415" y="914"/>
-        </scene>
         <!--Crashes-->
         <scene sceneID="2Cc-q1-9DG">
             <objects>
@@ -728,7 +651,6 @@
         <image name="Analytics" width="375" height="235"/>
         <image name="Build" width="375" height="235"/>
         <image name="Crashes" width="375" height="235"/>
-        <image name="Distribute" width="375" height="235"/>
         <image name="MCLogo" width="375" height="138"/>
         <image name="Push" width="375" height="235"/>
         <image name="Test" width="375" height="235"/>

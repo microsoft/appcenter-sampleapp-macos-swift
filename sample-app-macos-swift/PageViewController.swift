@@ -6,7 +6,6 @@ class PageViewController: NSPageController, NSPageControllerDelegate {
     "welcomeViewController",
     "buildViewController",
     "testViewController",
-    "distributeViewController",
     "crashViewController",
     "analyticsViewController",
     "pushViewController",
