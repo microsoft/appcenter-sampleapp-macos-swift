@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSViewController">
+            <connections>
+                <outlet property="view" destination="eRL-Ph-Xp7" id="p2w-pz-Ng8"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="eRL-Ph-Xp7">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <box fixedFrame="YES" boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="dWt-iV-D6s">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="312"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="contentView" ambiguous="YES" id="4CH-y4-eQR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="312"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiZ-DX-XRJ">
+                                <rect key="frame" x="80" y="170" width="444" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="3sX-2M-W9I">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <string key="title">App Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product.</string>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <color key="fillColor" white="0.1224772135" alpha="1" colorSpace="calibratedWhite"/>
+                </box>
+                <box fixedFrame="YES" boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="X3n-VO-v8k">
+                    <rect key="frame" x="0.0" y="312" width="600" height="138"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="contentView" ambiguous="YES" id="2dq-cb-I6w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="138"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-ZW-K4n">
+                                <rect key="frame" x="164" y="19" width="272" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="MCLogo" id="4jl-xX-grf"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <color key="fillColor" red="0.79558473825454712" green="0.17938828468322754" blue="0.38709831237792969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="241" y="46"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MCLogo" width="375" height="138"/>
+    </resources>
+</document>
