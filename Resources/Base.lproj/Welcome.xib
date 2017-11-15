@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="3sX-2M-W9I">
                                     <font key="font" metaFont="system" size="17"/>
-                                    <string key="title">Mobile Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product.</string>
+                                    <string key="title">App Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product.</string>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

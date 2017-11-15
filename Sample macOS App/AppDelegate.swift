@@ -1,8 +1,8 @@
 import Cocoa
-import MobileCenter
-import MobileCenterAnalytics
-import MobileCenterCrashes
-import MobileCenterPush
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+import AppCenterPush
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSPageControllerDelegate {
@@ -13,8 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPageControllerDelegate {
   private var services: [String] = [ "Welcome", "Build", "Test", "Crashes", "Analytics", "Push"]
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-    // Start mobile center
-    MSMobileCenter.start("<APP SECRET HERE>", withServices: [
+    // Start App Center
+    MSAppCenter.start("<APP SECRET HERE>", withServices: [
       MSAnalytics.self,
       MSCrashes.self,
       MSPush.self,

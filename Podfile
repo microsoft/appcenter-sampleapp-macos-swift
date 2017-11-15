@@ -5,6 +5,6 @@ target 'Sample macOS App' do
   use_frameworks!
 
   # Pods for Sample macOS App
-  pod 'MobileCenter'
-  pod 'MobileCenter/Push'
+  pod 'AppCenter'
+  pod 'AppCenter/Push'
 end

@@ -1,5 +1,5 @@
 import Cocoa
-import MobileCenterCrashes
+import AppCenterCrashes
 
 class CrashViewController: NSViewController {
 

@@ -1,5 +1,5 @@
 import Cocoa
-import MobileCenterAnalytics
+import AppCenterAnalytics
 
 class AnalyticsViewController: NSViewController {
   
