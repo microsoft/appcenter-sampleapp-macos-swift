@@ -17,11 +17,11 @@ class AnalyticsViewController: NSViewController {
     alert.addButton(withTitle: "💙 Blue")
     alert.addButton(withTitle: "❤️ Red")
     switch alert.runModal() {
-    case NSAlertFirstButtonReturn:
+    case NSApplication.ModalResponse.alertFirstButtonReturn:
       MSAnalytics.trackEvent("Color event", withProperties: ["Color": "Yellow"])
-    case NSAlertSecondButtonReturn:
+    case NSApplication.ModalResponse.alertSecondButtonReturn:
       MSAnalytics.trackEvent("Color event", withProperties: ["Color": "Blue"])
-    case NSAlertThirdButtonReturn:
+    case NSApplication.ModalResponse.alertThirdButtonReturn:
       MSAnalytics.trackEvent("Color event", withProperties: ["Color": "Red"])
     default:
       break

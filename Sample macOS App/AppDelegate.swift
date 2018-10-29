@@ -35,11 +35,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPageControllerDelegate {
   func pageController(_ pageController: NSPageController, viewControllerForIdentifier identifier: String) -> NSViewController {
     switch identifier {
     case "Crashes":
-      return CrashViewController(nibName: identifier, bundle: nil)!
+        return CrashViewController(nibName: identifier, bundle: nil)
     case "Analytics":
-      return AnalyticsViewController(nibName: identifier, bundle: nil)!
+        return AnalyticsViewController(nibName: identifier, bundle: nil)
     default:
-      return NSViewController(nibName: identifier, bundle: nil)!
+        return NSViewController(nibName: identifier, bundle: nil)
     }
   }
 }
