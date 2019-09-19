@@ -10,7 +10,7 @@ class CrashViewController: NSViewController {
     alert.addButton(withTitle: "Crash app")
     alert.addButton(withTitle: "Cancel")
     switch alert.runModal() {
-    case NSAlertFirstButtonReturn:
+    case NSApplication.ModalResponse.alertFirstButtonReturn:
       
       // Generate test crash
       MSCrashes.generateTestCrash()
