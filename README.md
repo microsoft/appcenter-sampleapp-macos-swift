@@ -1,24 +1,29 @@
-# Sample macOS (Swift) App and Tutorials for Visual Studio App Center
+# App Center Sample App for macOS (Swift)
 
-[Visual Studio App Center](https://aka.ms/telgml) brings together multiple services, commonly used by mobile developers, into a single, integrated product.
+The macOS application in this repository and its corresponding tutorials will help you quickly and easily onboard to Visual Studio App Center.
 
-This sample Swift app and its collection of tutorials is designed to help you quickly and easily onboard to App Center for macOS.
+## About this repository
 
-## This repository
+The App Center SDK modules are already integrated within the application. Simply follow the tutorials to learn how to use each service.
 
-This sample Swift app has the App Center SDK already integrated - all you need to do is follow the tutorials at the bottom to learn how to use each service.
+### Build status (master branch)
+
+| Build Service   | Status                                                                                                                                                                                                                                                               |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| App Center      | [![Build status](https://build.appcenter.ms/v0.1/apps/22f12fa6-2a82-47a5-be63-5ec1ad81be34/branches/master/badge)](https://appcenter.ms)                                                                                                                             |
+| Azure Pipelines | [![Build Status](https://dev.azure.com/msmobilecenter/Mobile-Center/_apis/build/status/sampleapp/microsoft.appcenter-sampleapp-macos-swift?branchName=master)](https://dev.azure.com/msmobilecenter/Mobile-Center/_build/latest?definitionId=3727&branchName=master) |
 
 ## Build the sample app
 
 After forking the repository, you'll need to install CocoaPods to build the app.
 
-```shell
+```sh
 sudo gem install cocoapods
 ```
 
 Next, install the dependencies.
 
-```shell
+```sh
 pod install
 ```
 
@@ -41,12 +46,12 @@ To sign the app in Xcode:
 
 ## Tutorial links
 
-Begin with the [Getting Started](https://docs.microsoft.com/en-us/mobile-center/quickstarts/macos/getting-started) tutorial. After you've completed that, you can do the rest in the order below, or choose a specific tutorial to follow.
+Begin with the [Getting Started](https://docs.microsoft.com/en-us/appcenter/quickstarts/macos/getting-started) tutorial. After you've completed that, you can do the rest in the order below, or choose a specific tutorial to follow.
 
 ## Contents
 
-| Tutorial                                                                                      | Description                                |
-| :-------------------------------------------------------------------------------------------- | :----------------------------------------- |
+| Tutorial                                                                                        | Description                                |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | [Getting Started](https://docs.microsoft.com/en-us/appcenter/quickstarts/macos/getting-started) | Set up the app                             |
 | [Build](https://docs.microsoft.com/en-us/appcenter/quickstarts/macos/build)                     | Build the app                              |
 | [Distribute](https://docs.microsoft.com/en-us/appcenter/quickstarts/macos/distribute)           | Distribute application to a group of users |
