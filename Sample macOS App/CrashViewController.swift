@@ -13,7 +13,7 @@ class CrashViewController: NSViewController {
     case NSApplication.ModalResponse.alertFirstButtonReturn:
       
       // Generate test crash
-      MSCrashes.generateTestCrash()
+      Crashes.generateTestCrash()
       fatalError()
     default:
       break

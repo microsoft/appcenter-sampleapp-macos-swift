@@ -6,5 +6,6 @@ target 'Sample macOS App' do
 
   # Pods for Sample macOS App
   pod 'AppCenter'
-  pod 'AppCenter/Push'
+  pod 'AppCenter/Analytics'
+  pod 'AppCenter/Crashes'
 end
