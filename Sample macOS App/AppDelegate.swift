@@ -2,7 +2,6 @@ import Cocoa
 import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
-import AppCenterPush
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSPageControllerDelegate {
@@ -14,10 +13,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPageControllerDelegate {
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Start App Center
-    MSAppCenter.start("<APP SECRET HERE>", withServices: [
-      MSAnalytics.self,
-      MSCrashes.self,
-      MSPush.self,
+    AppCenter.start(withAppSecret: "<APP SECRET HERE>", services: [
+      Analytics.self,
+      Crashes.self,
     ])
 
     pageController.arrangedObjects = services
